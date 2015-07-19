@@ -1,10 +1,10 @@
-FROM java:openjdk-7-jdk
+FROM java:openjdk-8-jdk
 
 MAINTAINER victor.romero@gmail.com
 
-RUN cd ~ && wget https://repository-master.mulesoft.org/nexus/content/repositories/releases/org/mule/distributions/mule-standalone/3.6.1/mule-standalone-3.6.1.tar.gz && echo "3a018c579ae2cd172569c8f8cf3a44b8 mule-standalone-3.6.1.tar.gz" | md5sum -c
+RUN cd ~ && wget https://repository-master.mulesoft.org/nexus/content/repositories/releases/org/mule/distributions/mule-standalone/3.7.0/mule-standalone-3.7.0.tar.gz && echo "6814d3dffb5d8f308101ebb3f4e3224a mule-standalone-3.7.0.tar.gz" | md5sum -c
 
-RUN cd /opt && tar xvzf ~/mule-standalone-3.6.1.tar.gz && rm ~/mule-standalone-3.6.1.tar.gz && ln -s /opt/mule-standalone-3.6.1 /opt/mule 
+RUN cd /opt && tar xvzf ~/mule-standalone-3.7.0.tar.gz && rm ~/mule-standalone-3.7.0.tar.gz && ln -s /opt/mule-standalone-3.7.0 /opt/mule 
 
 # Define environment variables.
 ENV MULE_HOME /opt/mule
