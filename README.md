@@ -12,7 +12,7 @@ docker pull vromero/mule
 For a simple application using 8081 port as HTTP
 
 ```
-docker run -d -name myMuleInstance -P -v ~/myAppsDir:/opt/mule/apps -v ~/myLogsDir:/opt/mule/logs vromero/mule
+docker run -d --name myMuleInstance -P -v ~/myAppsDir:/opt/mule/apps -v ~/myLogsDir:/opt/mule/logs vromero/mule
 ```
 
 #### Noteworthy mount points
