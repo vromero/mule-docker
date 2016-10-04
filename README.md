@@ -17,9 +17,9 @@ docker run -d --name muleEsb381 -p 8081:8081 -v ~/myAppsDir:/opt/mule/apps -v ~/
 |------------------ |-----------------------------------------------------------------|
 |/opt/mule/apps     | Mule Application deployment directory                           |
 |/opt/mule/domains  | Mule Domains deployment directory                               |
-|/opt/mule/conf     | Configuration directory                                         |
 |/opt/mule/logs     | Logs directory                                                  |
 
+**NB: `/opt/mule/conf` was removed as volume to enable custom `wrapper.conf` editing in Dockerfile.**
 
 #### Exposed ports
 

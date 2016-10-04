@@ -10,7 +10,7 @@ RUN cd /opt && tar xvzf ~/mule-standalone-3.8.1.tar.gz && rm ~/mule-standalone-3
 ENV MULE_HOME /opt/mule
 
 # Define mount points.
-VOLUME ["/opt/mule/logs", "/opt/mule/conf", "/opt/mule/apps", "/opt/mule/domains"]
+VOLUME ["/opt/mule/logs", "/opt/mule/apps", "/opt/mule/domains"]
 
 # Define working directory.
 WORKDIR /opt/mule
