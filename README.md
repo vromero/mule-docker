@@ -7,6 +7,21 @@ Docker Image packaging for MuleESB http://www.mulesoft.org
 docker pull vromero/mule
 ```
 
+### Build
+
+By default the following command will build mule-ce 3.9.0
+
+```
+docker build .
+```
+
+You can parameterize the build to create an image based on other mule image like
+
+```
+docker build . --build-arg mule_version=3.8.1
+```
+
+
 ### Usage
 
 For a simple application using 8081 port as HTTP
@@ -36,5 +51,5 @@ This means only exposed port is 8081, if the application has other needs you sho
 
 ```
 -p 1234:1234
-````
+```
 
